@@ -1,4 +1,4 @@
-import "./Mainlayout.css";
+import "./MainLayout.css";
 import { NavLink } from "react-router-dom";
 
 function MainLayout({ children }) {
