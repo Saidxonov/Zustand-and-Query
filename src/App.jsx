@@ -5,7 +5,7 @@ import RTK from "./pages/RTK";
 import Zustand from "./pages/Zustand";
 import Query from "./components/Query";
 import Mutation from "./components/useMutation";
-import Pagination from "./components/Pagination";
+import PaginationQuery from "./components/Pagination";
 
 function App() {
   return (
@@ -47,7 +47,7 @@ function App() {
           path="/pagination"
           element={
             <MainLayout>
-              <Pagination></Pagination>
+              <PaginationQuery />
             </MainLayout>
           }
         />
