@@ -1,5 +1,4 @@
 import React from "react";
-import Pagination from "@mui/material/Pagination";
 
 function PaginationQuery() {
   return (
