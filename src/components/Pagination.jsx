@@ -9,4 +9,4 @@ function PaginationQuery() {
   );
 }
 
-export default Pagination;
+export default PaginationQuery;
