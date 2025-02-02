@@ -6,6 +6,8 @@ import Zustand from "./pages/Zustand";
 import Query from "./components/Query";
 import Mutation from "./components/useMutation";
 import PaginationQuery from "./components/Pagination";
+import Counter from "./components/Counter";
+import TodoList from "./components/Todo";
 
 function App() {
   return (
@@ -48,6 +50,22 @@ function App() {
           element={
             <MainLayout>
               <PaginationQuery />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/zustand/counter"
+          element={
+            <MainLayout>
+              <Counter />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/zustand/todo"
+          element={
+            <MainLayout>
+              <TodoList />
             </MainLayout>
           }
         />
