@@ -20,7 +20,7 @@ const TodoList = () => {
           type="text"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          className="focus:outline-0 flex-1 p-2 border rounded-l"
+          className="focus:outline-0 flex-1 cursor-none p-2 border rounded-l"
           placeholder="Todo kiriting..."
         />
         <button
@@ -39,7 +39,7 @@ const TodoList = () => {
           >
             <span
               onClick={() => toggleTodo(todo.id)}
-              className={`cursor-pointer truncate ${
+              className={`truncate ${
                 todo.completed ? "line-through text-gray-500" : ""
               }`}
             >
@@ -47,7 +47,7 @@ const TodoList = () => {
             </span>
             <button
               onClick={() => removeTodo(todo.id)}
-              className="bg-red-500 text-white px-2 py-1 rounded cursor-pointer"
+              className="bg-red-500 text-white px-2 py-1 rounded"
             >
               O‘chirish
             </button>

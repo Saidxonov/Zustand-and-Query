@@ -9,13 +9,13 @@ function Counter() {
       </h1>
       <div className="flex flex-wrap items-center gap-[50px] justify-center">
         <button
-          className="select-none text-center cursor-pointer text-4xl"
+          className="select-none text-center text-4xl"
           onClick={increment}
         >
           increment
         </button>
         <button
-          className="select-none text-center cursor-pointer text-4xl"
+          className="select-none text-center text-4xl"
           onClick={decrement}
         >
           decrement

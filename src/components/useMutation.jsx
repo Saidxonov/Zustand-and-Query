@@ -37,7 +37,7 @@ const Mutation = () => {
         {!mutation.isSuccess && (
           <button
             type="submit"
-            className="cursor-pointer text-center text-6xl hover:bg-gray-200 transition p-[10px] rounded-md mt-[100px]"
+            className="text-center text-6xl hover:bg-gray-200 transition p-[10px] rounded-md mt-[100px]"
             disabled={mutation.isPending}
           >
             {mutation.isPending ? "Yuklanmoqda..." : "Yuborish"}

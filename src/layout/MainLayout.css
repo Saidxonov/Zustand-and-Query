@@ -10,7 +10,6 @@
   column-gap: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
-  cursor: pointer;
 }
 
 .userName p:hover {
@@ -56,7 +55,6 @@ ol {
 }
 
 .menus ul li a {
-  cursor: pointer;
   padding: 8px 16px;
   border-radius: 10px;
   color: #000;
@@ -71,35 +69,6 @@ ol {
   background-color: #02132f;
   color: #fff;
   padding: 8px 16px;
-}
-
-.cart {
-  display: flex;
-  align-items: center;
-  column-gap: 16px;
-}
-
-.cart img {
-  cursor: pointer;
-}
-
-.products {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.product {
-  width: 350px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 12px 32px -22px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 12px 32px -22px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 12px 32px -22px rgba(0, 0, 0, 0.75);
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .product:hover {

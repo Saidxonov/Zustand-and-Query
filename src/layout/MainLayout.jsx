@@ -21,18 +21,20 @@ function MainLayout({ children }) {
               </div>
               <div className="menus">
                 <ul>
-                  <li className="link">
+                  <li className="link cursor-none">
                     <NavLink
                       to="/"
                       className={({ isActive }) =>
-                        isActive ? "active" : "noactive"
+                        isActive ? "active cursor-none" : "cursor-none noactive"
                       }
                     >
                       Query
                     </NavLink>
                   </li>
                   <li className="link">
-                    <NavLink to="/zustand">Zustand</NavLink>
+                    <NavLink className="cursor-none" to="/zustand">
+                      Zustand
+                    </NavLink>
                   </li>
                 </ul>
               </div>
