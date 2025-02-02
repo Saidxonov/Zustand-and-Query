@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import { Pagination, CircularProgress, Box, Typography } from "@mui/material";
+import { Pagination, CircularProgress } from "@mui/material";
 
 const fetchUsers = async (page) => {
   const { data } = await axios.get(
@@ -21,8 +21,16 @@ export default function MuiPaginatedUsers() {
 
   console.log(data);
 
-  if (isLoading) return <CircularProgress />;
-  if (isError) return <Typography color="error">Error loading data</Typography>;
+  if (isLoading)
+    return (
+      <CircularProgress sx={{ marginLeft: "750px", marginTop: "300px" }} />
+    );
+  if (isError)
+    return (
+      <h1 className="text-red-400 text-center text-4xl">
+        Ma'lumotlarni olishda xatolik yuz berdi...
+      </h1>
+    );
 
   return (
     <div className="cont">
