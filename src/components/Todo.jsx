@@ -6,7 +6,7 @@ const TodoList = () => {
   const [text, setText] = useState("");
 
   const handleAddTodo = () => {
-    if (text.trim()) {
+    if (text) {
       addTodo(text);
       setText("");
     }
